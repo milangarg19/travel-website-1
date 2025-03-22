@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section with Background Video -->
+    <section id="home">
+        <video autoplay muted loop id="bg-video">
+            <source src="https://www.videvo.net/videvo_files/converted/2016_04/preview/160330_A_Travel_03.mp423102.webm" type="video/webm">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay">
+            <h2>Explore the World</h2>
+            <p>Discover amazing places with us!</p>
+            <a href="#destinations" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Destinations with Parallax Effect -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+            <div class="destination" data-parallax>
+                <img src="https://source.unsplash.com/300x200/?beach" alt="Beach">
+                <h3>Maldives</h3>
+            </div>
+            <div class="destination" data-parallax>
+                <img src="https://source.unsplash.com/300x200/?mountains" alt="Mountains">
+                <h3>Swiss Alps</h3>
+            </div>
+            <div class="destination" data-parallax>
+                <img src="https://source.unsplash.com/300x200/?city" alt="City">
+                <h3>Paris</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
